@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# CerevynAI Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CerevynAI Dashboard is a web-based monitoring dashboard developed for Problem Statement 11 – AI Web Dashboard. It is designed to monitor AI agents, workflows, system logs, and architecture details through a clean and interactive interface.
 
-## Available Scripts
+## Problem Statement
+**PS 11 – AI Web Dashboard**
 
-In the project directory, you can run:
+Build a web application for monitoring AI systems and workflows with:
+- dashboard UI
+- real-time updates
+- control panel
 
-### `npm start`
+## Project Overview
+This project provides a centralized dashboard to track AI system activity. It includes pages for overall metrics, AI agents, workflow status, live activity logs, and system architecture.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Dashboard overview with key metrics
+- AI agents monitoring and status display
+- Workflow monitoring with progress and success details
+- Activity log with recent system events
+- Architecture and API structure page
+- Control options like start, pause, stop, and restart
+- Simulated live feed updates using mock data
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Modules
+### Overview
+Shows total events, success rate, latency, active agents, charts, and system health.
 
-### `npm test`
+### AI Agents
+Displays different agents, their type, model, status, and available control actions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Workflows
+Shows workflow pipelines with run count, successful runs, failed runs, and progress.
 
-### `npm run build`
+### Activity Log
+Displays recent events happening in the system in a live feed style.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Architecture
+Shows the frontend, API, processing, AI, and storage layers along with sample API endpoints.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
+- React.js
+- JavaScript
+- Recharts
+- CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## How to Run
+```bash
+npm install
+npm start
