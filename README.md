@@ -1,42 +1,51 @@
 # CerevynAI Dashboard
 
-CerevynAI Dashboard is a web-based monitoring dashboard developed for Problem Statement 11 – AI Web Dashboard. It is designed to monitor AI agents, workflows, system logs, and architecture details through a clean and interactive interface.
+CerevynAI Dashboard is a web-based application developed for Problem Statement 11: AI Web Dashboard. It is designed to monitor AI systems, agents, workflows, logs, and analytics through a clean and interactive dashboard.
 
 ## Problem Statement
-**PS 11 – AI Web Dashboard**
+Design a web application for monitoring AI systems and workflows.
 
-Build a web application for monitoring AI systems and workflows with:
-- dashboard UI
-- real-time updates
-- control panel
+### Inputs Provided
+- Logs and analytics data
+- Backend API (mock)
+
+### Expected Features
+- Dashboard UI
+- Real-time updates
+- Control panel
+
+### Expected Deliverables
+- UI wireframes
+- System architecture
+- API structure
 
 ## Project Overview
-This project provides a centralized dashboard to track AI system activity. It includes pages for overall metrics, AI agents, workflow status, live activity logs, and system architecture.
+This project provides a centralized dashboard to monitor AI-related operations in one place. It includes pages for overall system metrics, AI agents, workflow monitoring, live activity logs, and architecture details.
 
 ## Features
 - Dashboard overview with key metrics
-- AI agents monitoring and status display
-- Workflow monitoring with progress and success details
-- Activity log with recent system events
+- Monitoring of AI agents and their status
+- Workflow tracking with progress details
+- Real-time style activity log
+- Control panel actions like start, pause, stop, and restart
 - Architecture and API structure page
-- Control options like start, pause, stop, and restart
-- Simulated live feed updates using mock data
+- Mock backend integration for simulating system data
 
 ## Modules
 ### Overview
-Shows total events, success rate, latency, active agents, charts, and system health.
+Displays total events, success rate, latency, active agents, charts, and system health.
 
 ### AI Agents
-Displays different agents, their type, model, status, and available control actions.
+Shows the available AI agents, their type, model, current status, and actions.
 
 ### Workflows
-Shows workflow pipelines with run count, successful runs, failed runs, and progress.
+Displays workflow pipelines, execution progress, success count, and failure count.
 
 ### Activity Log
-Displays recent events happening in the system in a live feed style.
+Shows recent events and system updates in a live feed format.
 
 ### Architecture
-Shows the frontend, API, processing, AI, and storage layers along with sample API endpoints.
+Represents frontend, API, processing, AI, and storage layers along with sample API endpoints.
 
 ## Tech Stack
 - React.js
