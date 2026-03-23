@@ -1,0 +1,44 @@
+.log-page { display: flex; flex-direction: column; gap: 24px; }
+.log-count { text-align: right; }
+.lc-num { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; color: var(--accent); display: block; }
+.lc-label { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--text3); }
+
+.log-card {}
+.log-empty { color: var(--text3); font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; text-align: center; padding: 40px 0; }
+
+.log-list { display: flex; flex-direction: column; gap: 6px; max-height: 600px; overflow-y: auto; }
+.log-list::-webkit-scrollbar { width: 4px; }
+.log-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+.log-entry {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: 10px;
+  background: var(--bg3); border: 1px solid transparent;
+  animation: logslide 0.3s ease;
+  transition: border-color 0.2s;
+}
+.log-entry:hover { border-color: var(--border2); }
+@keyframes logslide { from{opacity:0;transform:translateY(-4px)} to{opacity:1;transform:translateY(0)} }
+
+.log-entry.type-green { border-left: 3px solid var(--accent3); }
+.log-entry.type-blue  { border-left: 3px solid var(--accent); }
+.log-entry.type-warn  { border-left: 3px solid var(--warn); }
+.log-entry.type-red   { border-left: 3px solid var(--danger); }
+
+.log-icon {
+  width: 22px; height: 22px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.65rem; font-weight: 700; flex-shrink: 0;
+}
+.log-icon.green { background: rgba(16,185,129,0.15); color: var(--accent3); }
+.log-icon.blue  { background: rgba(59,130,246,0.15);  color: var(--accent); }
+.log-icon.warn  { background: rgba(245,158,11,0.15);  color: var(--warn); }
+.log-icon.red   { background: rgba(239,68,68,0.15);   color: var(--danger); }
+
+.log-body { flex: 1; display: flex; align-items: center; gap: 10px; }
+.log-msg { font-size: 0.82rem; color: var(--text); }
+.log-agent { font-family: 'JetBrains Mono', monospace; font-size: 0.62rem; color: var(--text3); background: var(--bg4); padding: 2px 8px; border-radius: 4px; white-space: nowrap; }
+
+.log-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex-shrink: 0; }
+.log-latency { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--accent2); }
+.log-time { font-family: 'JetBrains Mono', monospace; font-size: 0.62rem; color: var(--text3); }

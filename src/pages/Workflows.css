@@ -1,0 +1,53 @@
+.workflows-page { display: flex; flex-direction: column; gap: 24px; }
+.workflows-list { display: flex; flex-direction: column; gap: 14px; }
+
+.wf-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.wf-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+}
+.wf-card.status-green::before { background: var(--accent3); }
+.wf-card.status-warn::before  { background: var(--warn); }
+.wf-card.status-red::before   { background: var(--danger); }
+
+.wf-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+.wf-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 3px; }
+.wf-id { font-family: 'JetBrains Mono', monospace; font-size: 0.62rem; color: var(--text3); }
+.wf-status { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; }
+.wf-status.green { color: var(--accent3); }
+.wf-status.warn  { color: var(--warn); }
+.wf-status.red   { color: var(--danger); }
+
+.wf-progress-wrap { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.wf-progress-bar { flex: 1; background: var(--bg4); border-radius: 4px; height: 6px; overflow: hidden; }
+.wf-progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 4px; transition: width 0.5s ease; }
+.wf-progress-label { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text2); width: 36px; text-align: right; }
+
+.wf-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 16px; padding: 12px; background: var(--bg3); border-radius: 10px; }
+.wf-stat { display: flex; flex-direction: column; gap: 3px; }
+.wst-label { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--text3); letter-spacing: 0.06em; }
+.wst-val { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+.wst-val.green { color: var(--accent3); }
+.wst-val.red   { color: var(--danger); }
+
+.wf-actions { display: flex; gap: 8px; }
+.wf-btn {
+  flex: 1; padding: 8px 14px; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--bg3);
+  font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
+  cursor: pointer; transition: all 0.2s; color: var(--text2);
+}
+.wf-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.wf-btn.start:hover:not(:disabled) { border-color: var(--accent3); color: var(--accent3); background: rgba(16,185,129,0.08); }
+.wf-btn.pause:hover:not(:disabled) { border-color: var(--warn); color: var(--warn); background: rgba(245,158,11,0.08); }
+.wf-btn.stop:hover:not(:disabled)  { border-color: var(--danger); color: var(--danger); background: rgba(239,68,68,0.08); }
